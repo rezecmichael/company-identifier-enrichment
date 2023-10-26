@@ -10,8 +10,11 @@ def get_tickers(url, filename):
     df = df.assign(DATE=datetime.utcnow().date())
     print(f"Unique tickers: {df.TICKER.nunique()}")
 
-    client = storage.Client(project='involuted-span-351408')
-    bucket = client.get_bucket('sec_data')
+    project = 'your-google-cloud-project'
+    bucket = 'your-google-cloud-bucket'
+
+    client = storage.Client(project=project)
+    bucket = client.get_bucket(bucket)
     blob = bucket.blob(filename)
     blob.upload_from_string(df.to_csv(index = False), content_type = 'csv')
 
