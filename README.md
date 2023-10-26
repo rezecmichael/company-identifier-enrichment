@@ -1,7 +1,7 @@
 # company-identifier-enrichment
 
 ### Data & Process Workflow
-![company_identifier_enrichment_diagram_MR](https://github.com/rezecmichael/projects/assets/41792900/075d8d50-f4ed-46ee-984f-c4abfa787762)
+![company_identifier_enrichment_diagram_MR](/images/company_identifier_enrichment_diagram_MR.jpg)
 
 ### Project Description
 An automated and scheduled process designed for the collection and mapping of diverse publicly available company identifiers, further enriched by company metadata retrieved from public APIs.
@@ -23,3 +23,6 @@ Accessing company information from dispersed data sources can be challenging. My
 - Google Cloud Run
 - Google Cloud Scheduler & Pub/Sub
 - Google Cloud Storage
+
+### BigQuery Database
+![bigquery_db_output](/images/bigquery_output.png)
